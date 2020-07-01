@@ -1,1 +1,19 @@
-hello
+<h3>POC</h3>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script>
+
+$(document).ready(function() {
+    $.getJSON('http://127.0.0.1:9090/configs', function(data) {
+        console.log(data);
+		    // document.write(data);
+        for (var val in data) {
+            console.log("obj." + val + " = " + data[val]);
+            document.write("obj." + val + " = " + data[val] + "<br/>");
+        }
+    });
+});
+
+</script>
+
